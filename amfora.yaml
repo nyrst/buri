@@ -1,0 +1,32 @@
+brrr: "https://nyrst.github.io/buri/amfora.yaml"
+latest_version: 1.7.2
+name: "amfora"
+releases_feed: "https://github.com/buri/amfora/releases.atom"
+tags:
+  - golang
+  - go
+  - gemini
+  - gemini-protocol
+  - terminal
+  - tui
+  - browser
+  - hacktoberfest 
+url: "https://github.com/buri/amfora"
+versions:
+  "1.7.2":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "amfora_1.7.2_linux_64-bit"
+          target: "amfora"
+      binary_type: "binary"
+      url: "https://github.com/makeworld-the-better-one/amfora/releases/download/v1.7.2/amfora_1.7.2_linux_64-bit"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "amfora_1.7.2_macOS_64-bit"
+          target: "amfora"
+      binary_type: "binary"
+      url: "https://github.com/makeworld-the-better-one/amfora/releases/download/v1.7.2/amfora_1.7.2_macOS_64-bit"
