@@ -1,5 +1,5 @@
 brrr: "https://nyrst.github.io/buri/amfora.yaml"
-latest_version: 1.7.2
+latest_version: 1.8.0
 name: "amfora"
 releases_feed: "https://github.com/buri/amfora/releases.atom"
 tags:
@@ -13,6 +13,23 @@ tags:
   - hacktoberfest 
 url: "https://github.com/buri/amfora"
 versions:
+  "1.8.0":
+    linux:
+      post_install:
+        - 
+          type: "symlink"
+          source: "amfora_1.8.0_linux_64-bit"
+          target: "amfora"
+      binary_type: "binary"
+      url: "https://github.com/makeworld-the-better-one/amfora/releases/download/v1.8.0/amfora_1.8.0_linux_64-bit"
+    macos:
+      post_install:
+        - 
+          type: "symlink"
+          source: "amfora_1.8.0_macOS_64-bit"
+          target: "amfora"
+      binary_type: "binary"
+      url: "https://github.com/makeworld-the-better-one/amfora/releases/download/v1.8.0/amfora_1.8.0_macOS_64-bit"
   "1.7.2":
     linux:
       post_install:
